@@ -1,0 +1,48 @@
+
+@font-face {
+    font-family: "Allura";
+    src: url(../fonts/Allura-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Light.ttf);
+}
+$font1: Allura, serif;
+$font2: Poppins, serif;
+$font3: Roboto, serif;
+
+$white: rgba(255, 255, 255, 0.87);
+$black: rgba(0, 0, 0, 0.788);
+$grey: rgba(128, 128, 128, 0.644);
+$color1: rgba(166, 114, 69);
+
+@mixin chidCenter{
+    /*centrer un enfant unique*/
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+@mixin aligncChildren($space){
+    display: flex;
+    align-items: center;
+    justify-content: $space;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*les boites qui sont au cote à cote termine tout le temps au meme niveau*/
+
+}
+li{
+    list-style: none;
+}
+body{
+    text-align: center;
+    font-family: $font3;
+    background: $black;
+    min-height: 100vh;
+}
